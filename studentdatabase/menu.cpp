@@ -32,4 +32,26 @@ void menu::getinformation(string &inf1, string &inf2,int &inf3)
 
 }
 
+void menu::searchstudent(int& inf)
+{
+	cout << "WprowadŸ ID" << endl;
+	cin >> inf;
+}
+
+void menu::editmenu(string &option)
+{
+	cout << "wybierz co chcesz zedytowaæ" << endl;
+	cout << "name" << endl;
+	cout << "lastname" << endl;
+	cout << "age" << endl;
+	cin >> option;
+
+	if (option != "name" or option != "lastname" or option != "age")
+	{
+		cout << "zla skladnia!";
+	}
+}
+
+
+
 
